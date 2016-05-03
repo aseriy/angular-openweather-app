@@ -1,19 +1,31 @@
 {
   "name": "angular-openweather-app",
-  "description": "A weather forecast app written in AngularJS based on OpenWeatherMap API calls",
   "version": "0.1.6",
-  "author": {
-    "name": "Matthias Lienau",
-    "email": "matthias@mlienau.de"
-  },
-  "scripts": {
-    "start": "node scripts/web-server.js"
+  "authors": [
+    "Matthias Lienau <matthias@mlienau.de>"
+  ],
+  "description": "A weather forecast app written in AngularJS.",
+  "main": "app/index.html",
+  "keywords": [
+    "angular",
+    "openweathermap",
+    "weather"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/atufkas/angular-openweather-app",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.*",
+    "iso-3166-country-codes-angular": "1.*"
   },
   "devDependencies": {
-      "phantomjs" : "*",
-      "karma" : "*",
-      "karma-junit-reporter" : "*",
-      "karma-jasmine" : "*",
-      "karma-ng-scenario" : "*"
+    "angular-mocks": "^1.5.5"
   }
 }

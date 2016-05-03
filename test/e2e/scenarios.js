@@ -28,5 +28,7 @@ describe('OpenWeather App', function() {
       element('[ng-view] form .btn-group > button:first-child').click();
       expect(element('[ng-view] form input#location').attr('value')).toBe('Hamburg');
     });
+
   });
+
 });
