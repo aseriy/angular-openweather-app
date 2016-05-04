@@ -3,6 +3,7 @@
 // Declare app level module which depends on filters, and services
 angular.module('openWeatherApp', [
   'ngRoute',
+  'ngSanitize',
   'openWeatherApp.filters',
   'openWeatherApp.services',
   'openWeatherApp.directives',

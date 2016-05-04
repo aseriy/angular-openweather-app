@@ -31,4 +31,17 @@ describe('OpenWeather App', function() {
 
   });
 
+  describe('Inspect forecast data for Boston', function() {
+
+    beforeEach(function() {
+      browser().navigateTo('#/forecast');
+    });
+
+    it('city and country', function() {
+      element('[ng-view] form .btn-group > button:first-child').click();
+      console.log(element('h3').text());
+    });
+
+  });
+
 });
