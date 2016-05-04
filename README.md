@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/aseriy/angular-openweather-app.svg?branch=master)](https://travis-ci.org/aseriy/angular-openweather-app)
+
 #### Note: Fix in latest update (v 0.1.6) on October 30, 2015
 Fixed bug leading to broken openweathermap API calls: Header field `x-api-key`
 is not sufficient anymore, so that now an additional query parameter `APPID` is mandatory.
