@@ -5,19 +5,20 @@
 describe('OpenWeather App', function() {
 
   beforeEach(function() {
-    browser().navigateTo('../../app/index.html');
+    browser.get('http://localhost:8000/app/index.html');
   });
 
 
   it('should automatically redirect to /forecast when location hash/fragment is empty', function() {
-    expect(browser().location().url()).toBe("/forecast");
+    expect(browser.getCurrentUrl()).toBe('http://localhost:8000/app/index.html#/forecast');
   });
 
 
+/*
   describe('Forecast view', function() {
 
     beforeEach(function() {
-      browser().navigateTo('#/forecast');
+      browser().get('#/forecast');
     });
 
     it('should render forecast when user navigates to /forecast', function() {
@@ -43,5 +44,6 @@ describe('OpenWeather App', function() {
     });
 
   });
+*/
 
 });
