@@ -17,6 +17,8 @@ before_script:
   - npm install -g karma
   - npm install -g karma-cli
   - npm install -g protractor
+  - npm install -g grunt
+  - npm install -g grunt-cli
   - bower install
   - sudo socat TCP-LISTEN:80,fork TCP:${RTCP_HOST}:${RTCP_PORT} > /tmp/socat.log 2>&1 &
   - webdriver-manager start > /tmp/webdriver-manager.log 2>&1 &
