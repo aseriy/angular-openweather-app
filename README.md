@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/aseriy/angular-openweather-app.svg?branch=master)](https://travis-ci.org/aseriy/angular-openweather-app)
+[![Build Status](https://travis-ci.org/aseriy/angular-openweather-app.svg?branch=master)](https://travis-ci.org/aseriy/angular-openweather-app) [![Coverage Status](https://coveralls.io/repos/github/aseriy/angular-openweather-app/badge.svg?branch=master)](https://coveralls.io/github/aseriy/angular-openweather-app?branch=master)
 
 #### Note: Fix in latest update (v 0.1.6) on October 30, 2015
 Fixed bug leading to broken openweathermap API calls: Header field `x-api-key`
