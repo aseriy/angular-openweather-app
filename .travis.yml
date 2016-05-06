@@ -9,6 +9,8 @@ addons:
     - api.openweathermap.org
 
 before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
   - sudo apt-get -qq update
   - sudo apt-get install -y socat
   - cat /etc/hosts
