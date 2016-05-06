@@ -27,7 +27,7 @@ before_script:
 
 script:
   - karma start config/karma.conf.js --single-run
-  - cat /tmp/*.log
+  - cat /tmp/web-server.js.log
   - grunt
 
 after_script:
