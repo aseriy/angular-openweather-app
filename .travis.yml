@@ -28,3 +28,5 @@ script:
   - karma start config/karma.conf.js --single-run
   - grunt
 
+after_script:
+  - grunt makeReport

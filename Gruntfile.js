@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
   		protractor_coverage: {
     		options: {
-      			keepAlive: true, 
+      			keepAlive: false, 
       			noColor: false,
 				collectorPort: 3001,
 				coverageDir: 'coverage',
