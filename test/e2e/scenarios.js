@@ -5,12 +5,12 @@
 describe('OpenWeather App', function() {
 
   beforeEach(function() {
-    browser.get('http://localhost:8000/app/index.html');
+    browser.get('http://localhost:8000/instrumented/app/index.html');
   });
 
 
   it('should automatically redirect to /forecast when location hash/fragment is empty', function() {
-    expect(browser.getCurrentUrl()).toBe('http://localhost:8000/app/index.html#/forecast');
+    expect(browser.getCurrentUrl()).toBe('http://localhost:8000/instrumented/app/index.html#/forecast');
   });
 
 
