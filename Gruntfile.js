@@ -3,6 +3,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-istanbul');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-coveralls');
 
 	grunt.initConfig({
   		protractor_coverage: {
@@ -48,6 +49,15 @@ module.exports = function(grunt) {
 				type: 'lcov',
 				dir: 'coverage/reports',
 				print: 'detail'
+			}
+		},
+		coveralls: {
+			options: {
+				force: false
+			},
+			e2e: {
+				src: 'coverage/reports/lcov.info',
+				options: {}
 			}
 		}
 	});

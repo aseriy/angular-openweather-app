@@ -33,4 +33,4 @@ script:
   - grunt
 
 after_script:
-  - grunt makeReport
+  - grunt coveralls
