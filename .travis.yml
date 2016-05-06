@@ -16,11 +16,13 @@ before_script:
   - npm install -g bower
   - npm install -g karma
   - npm install -g karma-cli
+  - npm install -g protractor
   - bower install
   - sudo socat TCP-LISTEN:80,fork TCP:${RTCP_HOST}:${RTCP_PORT} > /tmp/socat.log 2>&1 &
+  - webdriver-manager start > /tmp/webdriver-manager.log 2>&1 &
   - scripts/web-server.js > /tmp/web-server.js.log 2>&1 &
 
 script:
   - karma start config/karma.conf.js --single-run
-  - karma start config/karma-e2e.conf.js
+  - grunt
 
